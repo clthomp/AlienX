@@ -1,0 +1,201 @@
+fileFormatVersion: 2
+guid: 511691001e83e984bb1e845f52367a50
+timeCreated: 1510860023
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: a
+    100002: Area
+    100004: arm_finger_1a_left
+    100006: arm_finger_1a_right
+    100008: arm_finger_1b_left
+    100010: arm_finger_1b_right
+    100012: arm_finger_1c_left
+    100014: arm_finger_1c_left_end
+    100016: arm_finger_1c_right
+    100018: arm_finger_1c_right_end
+    100020: arm_finger_2a_left
+    100022: arm_finger_2a_right
+    100024: arm_finger_2b_left
+    100026: arm_finger_2b_right
+    100028: arm_finger_2c_left
+    100030: arm_finger_2c_left_end
+    100032: arm_finger_2c_right
+    100034: arm_finger_2c_right_end
+    100036: arm_wrist_left
+    100038: arm_wrist_right
+    100040: Armature
+    100042: Armature 1
+    100044: astronaut
+    100046: Camera
+    100048: Head2
+    100050: Head2_end
+    100052: Hips22
+    100054: LeftArm1
+    100056: LeftFoot2
+    100058: LeftForeArm1
+    100060: LeftHand1
+    100062: LeftHandProp1
+    100064: LeftHandProp1_end
+    100066: LeftLeg2
+    100068: LeftShoulder2
+    100070: LeftToeBase2
+    100072: LeftToeBase_END2
+    100074: LeftToeBase_END2_end
+    100076: LeftUpLeg2
+    100078: Neck2
+    100080: RightArm2
+    100082: RightFoot2
+    100084: RightForeArm1
+    100086: RightHand1
+    100088: RightHandProp1
+    100090: RightHandProp1_end
+    100092: RightLeg2
+    100094: RightShoulder2
+    100096: RightToeBase2
+    100098: RightToeBase_END2
+    100100: RightToeBase_END2_end
+    100102: RightUpLeg2
+    100104: RootAstro
+    100106: //RootNode
+    100108: Spine12
+    100110: Spine22
+    400000: a
+    400002: Area
+    400004: arm_finger_1a_left
+    400006: arm_finger_1a_right
+    400008: arm_finger_1b_left
+    400010: arm_finger_1b_right
+    400012: arm_finger_1c_left
+    400014: arm_finger_1c_left_end
+    400016: arm_finger_1c_right
+    400018: arm_finger_1c_right_end
+    400020: arm_finger_2a_left
+    400022: arm_finger_2a_right
+    400024: arm_finger_2b_left
+    400026: arm_finger_2b_right
+    400028: arm_finger_2c_left
+    400030: arm_finger_2c_left_end
+    400032: arm_finger_2c_right
+    400034: arm_finger_2c_right_end
+    400036: arm_wrist_left
+    400038: arm_wrist_right
+    400040: Armature
+    400042: Armature 1
+    400044: astronaut
+    400046: Camera
+    400048: Head2
+    400050: Head2_end
+    400052: Hips22
+    400054: LeftArm1
+    400056: LeftFoot2
+    400058: LeftForeArm1
+    400060: LeftHand1
+    400062: LeftHandProp1
+    400064: LeftHandProp1_end
+    400066: LeftLeg2
+    400068: LeftShoulder2
+    400070: LeftToeBase2
+    400072: LeftToeBase_END2
+    400074: LeftToeBase_END2_end
+    400076: LeftUpLeg2
+    400078: Neck2
+    400080: RightArm2
+    400082: RightFoot2
+    400084: RightForeArm1
+    400086: RightHand1
+    400088: RightHandProp1
+    400090: RightHandProp1_end
+    400092: RightLeg2
+    400094: RightShoulder2
+    400096: RightToeBase2
+    400098: RightToeBase_END2
+    400100: RightToeBase_END2_end
+    400102: RightUpLeg2
+    400104: RootAstro
+    400106: //RootNode
+    400108: Spine12
+    400110: Spine22
+    2000000: Camera
+    4300000: astronaut
+    4300002: a
+    9500000: //RootNode
+    10800000: Area
+    13700000: a
+    13700002: astronaut
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
