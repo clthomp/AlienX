@@ -11,6 +11,8 @@ public class Astronaut : Singleton<Astronaut> {
 	private float navigationTime = 2.0f;
 	[SerializeField]
 	private Transform[] placeholderPoints;
+	private float rightBound = 3.4f;
+	private float leftBound = -5.66f;
 	// Use this for initialization
 	void Start () {
 		//getCurrentLocation();
@@ -19,11 +21,18 @@ public class Astronaut : Singleton<Astronaut> {
 	// Update is called once per frame
 	void Update () {
 		//getCurrentLocation();
-		if (target >= 0 && target < 4 && GameManager.Instance.getLife()) {
+		if (GameManager.Instance.getLife()) {
+				astronaut.Translate(Input.GetAxis("Horizontal")*Time.deltaTime*playerSpeed,0f,0f);
+				astronaut.position = new Vector3 (
+				Mathf.Clamp(astronaut.position.x,leftBound,rightBound),
+				-2.76f,
+				-8.9f
+				);
+				/*
 			if (Input.GetKeyDown(KeyCode.LeftArrow))
 					 {
 						 //if (destination >= 0) {
-						 		astronaut.position = Vector3.MoveTowards(astronaut.position, placeholderPoints[target-1].position, playerSpeed * navigationTime);
+
 						 		target--;
 								Debug.Log("Player moved to location: " + target.ToString());
 								//astronaut.position = placeholderPoints[destination-1];
@@ -33,16 +42,16 @@ public class Astronaut : Singleton<Astronaut> {
 					 if (Input.GetKeyDown(KeyCode.RightArrow))
 					 {
 						 //if (destination <= 3) {
-						 astronaut.position = Vector3.MoveTowards(astronaut.position, placeholderPoints[target+1].position, playerSpeed * navigationTime);
 						 target++;
 						 Debug.Log("Player moved to location: " + target.ToString());
 						 // }
 					 }
+					 */
 		 }
 	}
 
 	void OnTriggerEnter(Collider other){
-		if (other.tag == "Enemy") {
+		if (other.tag == "Alien") {
 			GameManager.Instance.Death();
 			Destroy(gameObject);
 			Debug.Log("Death!");

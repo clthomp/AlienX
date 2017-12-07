@@ -5,8 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : Singleton<GameManager> {
 
-  private bool alive = true;
+  public bool alive = true;
 	public GameObject spawnPoint;
+  public GameObject lightSpawn;
 	[SerializeField]
 	private GameObject[] enemies;
 	[SerializeField]
@@ -17,8 +18,12 @@ public class GameManager : Singleton<GameManager> {
 	private int enemiesPerSpawn;
 	[SerializeField]
 	private int spawnDelay;
+  [SerializeField]
+  private GameObject light;
 	private int enemiesOnScreen = 0;
 	public int score = 0;
+  [SerializeField]
+  private GameObject dialogbox;
   int randomAlien = 0;
   int spawnedAlien = 5;
 
@@ -61,9 +66,10 @@ public class GameManager : Singleton<GameManager> {
           }
           spawnedAlien = randomAlien;
 					enemiesOnScreen++;
+          totalEnemies++;
 				}
 			}
-			yield return new WaitForSeconds(Random.Range(0.0f,4f));
+			yield return new WaitForSeconds(Random.Range(0.0f,8f));
 			StartCoroutine(spawn());
 		}
 	}
@@ -78,19 +84,25 @@ public class GameManager : Singleton<GameManager> {
 
 	// Use this for initialization
 	void Start () {
+    alive = true;
 
+    GameObject newLight = Instantiate(light) as GameObject;
+    newLight.transform.position = lightSpawn.transform.position;
 	}
 
 	// Update is called once per frame
 	void Update () {
-			StartCoroutine(spawn());
  			 if (Input.GetKeyDown(KeyCode.R))
  			 {
- 				  SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+           DestroyImmediate(Camera.main.gameObject);
+           Application.LoadLevel(Application.loadedLevel);
  			}
       else if (Input.GetKeyDown(KeyCode.M))
       {
          SceneManager.LoadScene(0);
+     }
+     if (alive) {
+       StartCoroutine(spawn());
      }
 	}
 }
